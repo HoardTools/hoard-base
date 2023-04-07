@@ -1,11 +1,11 @@
 {
     "type": "module",
-    "name": "@hoard-tools/LIBRARY_NAME",
-    "version": "0.1.1",
-    "description": "LIBRARY_DESC",
+    "name": "@hoard-tools/hoard-base",
+    "version": "0.1.0",
+    "description": "Base library for Hoard themes, utility code, etc",
     "repository": {
         "type": "git",
-        "url": "https://github.com/HoardTools/<url>.git"
+        "url": "https://github.com/HoardTools/hoard-base.git"
     },
     "author": "Dax Harris",
     "license": "MIT",
