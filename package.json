@@ -17,7 +17,20 @@
         "@types/react": "^18.0.31",
         "rollup": "^3.20.2",
         "tslib": "^2.5.0",
-        "typescript": "^5.0.2",
+        "typescript": "^5.0.2"
+    },
+    "scripts": {
+        "rollup": "tsc && rollup -c --bundleConfigAsCjs"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "types": "dist/esm/types/index.d.ts",
+    "dependencies": {},
+    "peerDependencies": {
+        "react": "^18.2.0",
         "@emotion/react": "^11.10.6",
         "@mantine/core": "^6.0.6",
         "@mantine/dates": "^6.0.6",
@@ -34,18 +47,5 @@
         "@tiptap/react": "^2.0.2",
         "@tiptap/starter-kit": "^2.0.2",
         "dayjs": "^1.11.7"
-    },
-    "scripts": {
-        "rollup": "tsc && rollup -c --bundleConfigAsCjs"
-    },
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "files": [
-        "dist"
-    ],
-    "types": "dist/esm/types/index.d.ts",
-    "dependencies": {},
-    "peerDependencies": {
-        "react": "^18.2.0"
     }
 }
