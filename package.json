@@ -1,0 +1,35 @@
+{
+    "type": "module",
+    "name": "@hoard-tools/LIBRARY_NAME",
+    "version": "0.1.1",
+    "description": "LIBRARY_DESC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/HoardTools/<url>.git"
+    },
+    "author": "Dax Harris",
+    "license": "MIT",
+    "private": false,
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^24.0.1",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-typescript": "^11.0.0",
+        "@types/react": "^18.0.31",
+        "rollup": "^3.20.2",
+        "tslib": "^2.5.0",
+        "typescript": "^5.0.2"
+    },
+    "scripts": {
+        "rollup": "tsc && rollup -c --bundleConfigAsCjs"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "types": "dist/esm/types/index.d.ts",
+    "dependencies": {},
+    "peerDependencies": {
+        "react": "^18.2.0"
+    }
+}
